@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mycss">
+</head>
+<style>
+  
+    .main{
+        background-color: rgb(183, 172, 172);
+        height: 450px;
+        width: 600px;
+        border-radius: 5px;
+        position: absolute;
+        top: 50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+       
+    }
+    div{
+    padding-left:20px;
+    padding-top: 10px;
+        
+
+    }
+    div input[type=text]{
+    width: 550px;
+    height: 35px;
+    border-radius: 5px;
+   }
+   #country{
+    width: 550px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid black;
+   
+        
+   }
+    
+    #submit{
+       
+        background-color: rgb(27, 82, 27);
+        width: 550px;
+        height: 35px;
+        border-radius: 5px;
+        margin-top: 30px;
+    }
+    input[type="submit"]:hover {
+        background-color: rgb(161, 221, 71)!important;
+    
+    
+    }
+    #form{
+        font-size: larger;
+    }
+   
+  
+        .dropdownn{
+            background-color: green;
+            height:50px ;
+            width: 150px;
+            text-decoration: none;
+            top: 50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            margin-top: 70px;
+            margin-left: 30px;
+        
+        }
+        .dropdown-content{
+            display: none;
+            font-size: 30px;
+           
+           position: absolute;
+            
+        }
+        .button{
+            display: inline-block;
+            position: absolute;
+        }
+        
+            
+        
+       
+       .dropdown-wrapper:hover .dropdown-content {
+        display: block;
+        background: #bab5b5;
+        height: 200px;
+        width: 200px;
+        cursor: pointer;
+    }
+
+    .dropdown-content a{
+        text-decoration: none;
+        color: black;
+        position: absolute;
+    }
+    a:hover{
+        background-color: #4e4747;
+    }
+       
+</style>
+<body>
+    <div class="all">
+    <form >
+    <div class="main">
+    <div><label for="name" id="form">First name</label></div><br>
+    <div><input type="text" id="name" name="name" placeholder="your name"></div><br>
+    <div><label for="lastname" id="form">Last name</label></div><br>
+    <div><input type="text" id="lastname" name="lastname" placeholder="your last name"></div><br>
+    <div><label for="country" id="form">Country</label></div><br>
+    <div><select id="country" name="country">
+        <option value="Au">Australia</option>
+        <option value="us">United States</option>
+        <option value="uk">United Kingdom</option>
+        <option value="ca">Canada</option>
+    </select></div>
+    <div>
+      
+        <input type="submit" id="submit" value="Submit">
+    </div>   
+    </form>
+    <div class="dropdown-wrapper">
+
+   
+        
+        <button class="dropdownn">Dropdown</button>
+        <div class="dropdown-content">
+            <a href="#">Link 1</a><br>
+            <a href="#">Link 2</a><br>
+            <a href="#">Link 3</a><br>
+        </div>
+    </div>
+    </div>
+    <br><br><br>
+    
+   
+</div>
+
+  
+   
+  </div>
+</body>
+</html>
